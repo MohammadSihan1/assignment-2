@@ -1,0 +1,238 @@
+*{
+    font-family: 'Work Sans';
+    
+}
+
+
+/* header styles */
+.header{
+    /* background-color: rgba(255, 144, 14, 0.1); */
+    background-color: #FF900E1A;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+    margin-right: 40px;
+}
+
+/* banner sytles */
+.banner{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 64px;
+}
+.banner-img{
+    height: 700px;
+    width: 1440px;
+    margin-bottom: 50px;
+    
+    
+}
+
+
+
+
+.btn-primary{
+    background: #FF900E;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* main styles */
+.quick-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quick-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 342px;
+    height: 342px;
+    border-radius: 8px;
+}
+.features{
+    padding: 20px;
+    margin-top: 287px;
+}
+.features > button{
+    margin-top: 32px;
+}
+.features-title{
+    font-size: 45px;
+}
+.design-1{
+    color: #727272;
+    
+}
+.design-2{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.design-3{
+    color: #FF900E;
+}
+
+.feature{
+    padding: 100px 0;
+}
+.feature-header{
+    margin-top: 169px;
+    font-weight: 700;
+    font-size: 45px;
+    border-left: 5px solid #FF900E;;
+    height: 106px;
+}
+
+.feature-container{
+    background-image: url(../images/architect.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+.feature-container > button{
+    padding: 45px 42px;
+    text-align: center;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 50px;
+    width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.feature-item{
+    width: 586px;
+    height: 171px;
+    padding: 20px 20px;
+    
+}
+
+/* facts styles */
+.facts-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.facts{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+}
+
+.fact{
+    text-align: center;
+    padding: 36.42px 52.8px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+}
+
+.fact:hover{
+    background-color: khaki;
+    transform: rotate(45deg);
+    transition-duration: 1s;
+    
+}
+
+/* footer */
+.sponser-header{
+    justify-content: center;
+    text-align: center;
+}
+
+.sponser{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ending sytles */
+.ending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    width: 1440px;
+    height: 100px;
+    
+}
+
+
+@media screen and (max-width:688px) {
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .banner{
+            display: flex;
+            flex-direction: column;
+        }
+        .banner-img{
+            
+            width: 50px;
+            margin-bottom: 50px;
+            
+            
+        }
+        .quick-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+            margin-top: 100px;
+        }
+        .quick-img{
+            display: none;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+        }
+        .features{
+            margin-top: 150px;
+            display: none;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .sponser{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .facts{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+
+
+
+}
